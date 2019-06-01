@@ -24,15 +24,26 @@ It's just a text file with two different types of content in it.
 1. text content, ie the actual words that will be displayed
 2. HTML tags, which tell the browser how the content is supposed to be displayed.
 
-It's easier to demonstrate than explain, so lets create one.
+Like most programming languages Javascript as a programming environment has a part that 
+shows an interface - just a fancy word for the screen - and another part that handles
+the logic.  
 
-1. **Create a folder for this workshop.**
+For web applications we use Javascript for the logic, and html along with style-sheets to
+make the interface.  The interface is the buttons, labels and boxes to type into; and
+the javascript tells the web application what to do when we tap the button or type in
+the box.
 
-    Make a folder somewhere on your computer and name it `js-intro-workshop` or whatever makes sense for you.  This folder can be on your desktop, or in My Documents, or where ever you want.  Just so long as you know where it is and it is somewhere that makes sense for you.  This folder is going to hold all the files that we create today.
+1. **Create an app for this workshop.**
 
-2. **Open that folder in Brackets.**
+    Go to [Glitch.me](http://glitch.me) and hit the *New Project* button.  Choose *Hello Sqlite* for the type.  After a short time
+    Glitch has created your project with some placeholder content, including a number of files.  
+    
+    We can already view this project in our browser to see what it looks like.  Note the name that Glitch has generated for your
+    project - it will be two short words joined by a hyphen.  Mine is called *wax-join* but yours will be some other name.
 
-    Open Brackets.  Go to  `File` `->` `Open Folder`, browse to the folder that you created and click open.  You'll see the name of your folder on the left.
+2. **Open that project in a new browser window.**
+
+    Open a new browser.  Go to  `File` `->` `Open Folder`, browse to the folder that you created and click open.  You'll see the name of your folder on the left.
 
 3. **Create a new file called `index.html`**
 
