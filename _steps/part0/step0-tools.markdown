@@ -77,13 +77,11 @@ Then you will be able to access the Dev Tools using the Develop menu.
 
 Press the `F12` button on your keyboard while you are in Internet Explorer or Microsoft Edge. This might not work if your F keys are bound to other functions like volume or media control - in this case, you need to press `fn-F12`.
 
-#### Your first practical exercise!
-
 If you are feeling a little overwhelmed by the Dev Tools, don't worry.  We are only really going to use one Dev Tools feature today: the console.  
 
 The console is used to display messages, including errors.  When debugging you will frequently make use of the console to display information to help you.
 
-<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i></h3>
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Your first practical exercise!</h3>
 
 Open your Dev Tools on this page (the one you're reading right now), and go to the Console tab.  
 
@@ -94,7 +92,7 @@ like this:
 
 You can also run JavaScript commands by typing them directly into the console.
 
-Type the following into the console and press enter to see a lovely(or not) shade of green.
+Type the following into the console and press enter to see a lovely (or not) shade of green.
 
 ```JavaScript
 document.body.style["background-color"] = '#86ff4a'

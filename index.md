@@ -59,4 +59,4 @@ Then we have some links to resources to continue your studies.
 This workshop content was originally developed by folks from [Muses JS](musescodejs.org) (previously known as [Nodegirls](http://nodegirls.com.au/)) and
 much of what you see here is gratefully owed to their hard work.
 
-It was added to (_forked_) by [Sarah Smith](http://github.com/sarah-j-smith) of [Smithsoft](https://github.com/Smithsoft/) for the "Women in Digital - Coding for non-Coders Workshop".
+It was _forked_ from [Muses JS "Intro Workshop" Github project](https://github.com/muses-code-js/js-intro-workshop) and added to by [Sarah Smith](http://github.com/sarah-j-smith) of [Smithsoft](https://github.com/Smithsoft/) for the "Women in Digital - Coding for non-Coders Workshop".
