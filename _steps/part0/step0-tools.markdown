@@ -28,15 +28,15 @@ The only two things you really need are:
 
 The first thing you need is an *editor* to write your Javascript source code in.
 
-Any program that can edit plain text files will work. Most operating systems have one installed by default, like NotePad on Windows or TextEdit on macOS.  You cannot use a word processor like Microsoft Word, Apple's Pages, or OpenOffice to write source code, because these programs include all sorts of information instead of just plain text.
+However since we don't have time to download and install editor tools in this workshop, you'll start out by 
+using an online code editor & server in one called [Glitch](http://glitch.me.
 
-While NotePad or TextEdit will do the job, you can download free and open-source editors which provide some additional features to make writing program source code a little more pleasant.  
+When you get started writing code on your own, you'll want to move to an editor that you download and install on
+your local computer.  Microsoft Word and the like won't work as servers & web-browsers cannot understand the special
+characters that those programs insert into your work.
 
-If you are just getting started we recommend [Brackets](http://brackets.io/).
+Luckily there are some great code editors available for free.  If you are just getting started we recommend [Brackets](http://brackets.io/).  Brackets is free, open-source, and available for Windows, macOS, and Linux.  There's also [Visual Studio Code](https://code.visualstudio.com/Download) by Microsoft and many others. 
 
-Brackets is free, open-source, and available for Windows, macOS, and Linux.
-
-For convenience, we will assume that you are using Brackets for the rest of this workshop.  The same principles apply to most editors although the specifics of menus will probably vary a little.
 
 ## WebBrowser Developer Tools
 
@@ -77,15 +77,20 @@ Then you will be able to access the Dev Tools using the Develop menu.
 
 Press the `F12` button on your keyboard while you are in Internet Explorer or Microsoft Edge. This might not work if your F keys are bound to other functions like volume or media control - in this case, you need to press `fn-F12`.
 
-#### Checkout the console
+#### Your first practical exercise!
 
 If you are feeling a little overwhelmed by the Dev Tools, don't worry.  We are only really going to use one Dev Tools feature today: the console.  
 
 The console is used to display messages, including errors.  When debugging you will frequently make use of the console to display information to help you.
 
-Open your Dev Tools on this page, and go to the Console tab.  
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i></h3>
 
-You should see the message `oh hey there!` which is from a little bit of JavaScript in this page.
+Open your Dev Tools on this page (the one you're reading right now), and go to the Console tab.  
+
+You should see the message `oh hey there!` which is from a little bit of JavaScript in this page, which looks 
+like this: 
+
+<tt>console.log('oh hey there!')</tt>
 
 You can also run JavaScript commands by typing them directly into the console.
 

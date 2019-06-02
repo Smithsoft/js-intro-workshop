@@ -46,8 +46,17 @@ There will also be lightning talks during the day to elaborate on several topics
 This workshop is divided into a number of steps. At the end of each step, you will 
 find a link to continue onto the next step.  
 
-In most of the steps, we have some `Tasks To Do` to get you to practise.
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Try coding now!</h3>
+
+See that hand icon?  In most of the steps, we have some tasks.  When you see a hand icon and
+below it some text that is `highlighted like this` its time for you to try typing those commands to learn by doing.
 
 Then we have some links to resources to continue your studies.
 
 
+## Thanks & Credits
+
+This workshop content was originally developed by folks from [Muses JS](musescodejs.org) (previously known as [Nodegirls](http://nodegirls.com.au/)) and
+much of what you see here is gratefully owed to their hard work.
+
+It was added to (_forked_) by [Sarah Smith](http://github.com/sarah-j-smith) of [Smithsoft](https://github.com/Smithsoft/) for the "Women in Digital - Coding for non-Coders Workshop".

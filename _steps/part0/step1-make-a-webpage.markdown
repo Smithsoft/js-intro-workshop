@@ -33,21 +33,68 @@ make the interface.  The interface is the buttons, labels and boxes to type into
 the javascript tells the web application what to do when we tap the button or type in
 the box.
 
-1. **Create an app for this workshop.**
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Create an app for this workshop.</h3>
 
-    Go to [Glitch.me](http://glitch.me) and hit the *New Project* button.  Choose *Hello Sqlite* for the type.  After a short time
-    Glitch has created your project with some placeholder content, including a number of files.  
+Go to [Glitch.me](http://glitch.me) and hit the *New Project* button.  Choose *hello-webpage* for the type.  After a short time Glitch has created your project with some placeholder content, including a number of files.  
+
+![start new project](../assets/glitch-new-project.png){:class="img-responsive"}
+
+We can already view this project in our browser to see what it looks like.  Note the name that Glitch has generated for your project - it will be two short words joined by a hyphen.  Mine is called *wax-join* but yours will be some other name.
+
+2. **Open each file in your Glitch editor.**
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i></h3>
+
+Examine the content of each of the files in your project.  You should see:
+
+![Glitch project ready](../assets/glitch-project-ready.png){:class="img-responsive"}
+
+* assets
+* README.md
+* index.html
+* script.js
+* style.css
+
+The first one is not a file, but a special folder that Glitch uses to help upload content to serve along with your web project.  Have a guess at what the others are, and what they do.  Try making some small changes & see what happens
+to the web-page that should be displayed on the right.  Try changing where it has:
+
+```html
+<h1>Hi there!</h1>
+```
+
+so it reads
+
+```html
+<h3>A Quieter Hello...</h3>
+```
+
+You'll have to tap the refresh button <i class="fa fa-rotate-right " aria-hidden="true"></i>  in the right hand pane to see the results.
+
+What happens if you leave the trailing `</h3>` off?
+
+3. **Make the UI for our ToDo app**
+
+For our webpage we're going to use some cool free presentation technology called Bootstrap that helps web developers make nice responsive user-interfaces for web-applications.
+
+* Browse to https://getbootstrap.com
+* Click the `Get started` button
+* Click `Starter template` at the top right
+* Click the 'copy' button at the top right of the HTML code window
+
+Now you have copied Bootstraps starter template.  You're ready to make your first web app.
+
+* Go back to your Glitch editor tab in your browser 
+* Click below the existing HTML code
+* Paste in your new Bootstrap template code
+* Finally - we want two lines out of the old template that Glitch made for us:
+
+```html
+   <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
     
-    We can already view this project in our browser to see what it looks like.  Note the name that Glitch has generated for your
-    project - it will be two short words joined by a hyphen.  Mine is called *wax-join* but yours will be some other name.
-
-2. **Open that project in a new browser window.**
-
-    Open a new browser.  Go to  `File` `->` `Open Folder`, browse to the folder that you created and click open.  You'll see the name of your folder on the left.
-
-3. **Create a new file called `index.html`**
-
-    Right click on the dark grey area just under the name of your folder and select `New File`. When prompted for the path, type `index.html` and press enter.  You'll see this new file `index.html` appear both in the tree-view and also opened in a new editor tab.
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+```
 
 4. **Add some HTML**
 
