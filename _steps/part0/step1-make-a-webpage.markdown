@@ -43,6 +43,9 @@ We can already view this project in our browser to see what it looks like.  Note
 
 <h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Open each file in your Glitch editor</h3>
 
+First up go to the settings for your project (click the project name top-left) and turn off the `Refresh app on
+changes` setting check box.  We want to be able to refresh manually.
+
 Examine the content of each of the files in your project.  You should see:
 
 ![Glitch project ready](../assets/glitch-project-ready.png){:class="img-responsive"}
