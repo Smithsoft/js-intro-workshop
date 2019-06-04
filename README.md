@@ -4,15 +4,21 @@ An introductory JavaScript workshop for beginners.
 
 ## Slides
 
-Check on slides, click [here](https://goo.gl/5HNvxD)
+Check on slides, click [here](https://bit.ly/smithsoft)
 
 
 ## Feedback
 
-To leave feedback click [here](https://docs.google.com/forms/d/e/1FAIpQLSdoOaviRIqsDPi1ZPTvTDVEzeQrSiEoDhsS0tmAIQZmkLkvxw/viewform?c=0&w=1)
+To leave feedback click [here](https://github.com/Smithsoft/js-intro-workshop/issues/new)
 
 
 ## How to use
+
+If you want to contribute to the training materials you probably need the [gh-pages](https://github.com/Smithsoft/js-intro-workshop/tree/gh-pages) branch.
+
+The other content here is from the original Muses JS project.
+
+----
 
 If you are familiar with git, you can clone this repository to your machine and simply start working
 through files starting from README.md file, after that jump to js/level1.js file.
