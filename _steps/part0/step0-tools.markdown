@@ -29,13 +29,13 @@ The only two things you really need are:
 The first thing you need is an *editor* to write your Javascript source code in.
 
 However since we don't have time to download and install editor tools in this workshop, you'll start out by 
-using an online code editor & server in one called [Glitch](http://glitch.me.
+using an online code editor & server in one called [Glitch](http://glitch.me){:target="_blank"}.
 
 When you get started writing code on your own, you'll want to move to an editor that you download and install on
 your local computer.  Microsoft Word and the like won't work as servers & web-browsers cannot understand the special
 characters that those programs insert into your work.
 
-Luckily there are some great code editors available for free.  If you are just getting started we recommend [Brackets](http://brackets.io/).  Brackets is free, open-source, and available for Windows, macOS, and Linux.  There's also [Visual Studio Code](https://code.visualstudio.com/Download) by Microsoft and many others. 
+Luckily there are some great code editors available for free.  If you are just getting started we recommend [Brackets](http://brackets.io/){:target="_blank"}.  Brackets is free, open-source, and available for Windows, macOS, and Linux.  There's also [Visual Studio Code](https://code.visualstudio.com/Download){:target="_blank"} by Microsoft and many others. 
 
 
 ## WebBrowser Developer Tools

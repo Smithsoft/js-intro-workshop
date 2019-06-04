@@ -7,7 +7,8 @@ number: start
 
 ## What is this?
 
-This is an introductory level workshop of the language of the web, JavaScript.
+This is an introductory level workshop of the language of the web, JavaScript.  It's based on workshop materials
+originally written by Muses JS (previously Nodegirls) and we are very thankful for their (opensourced) work.
 
 ## What is JavaScript?
 
@@ -44,7 +45,11 @@ There will also be lightning talks during the day to elaborate on several topics
 ## Workshop Structure
 
 This workshop is divided into a number of steps. At the end of each step, you will 
-find a link to continue onto the next step.  
+find a link to continue onto the next step.
+
+Tonight we'll be working through part 0, with your instructor demonstrating how to do
+each step (after first giving you a chance at it un-aided).  The other parts are your
+homework to gain the extra skills for the stretch goal in step 3.
 
 <h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Try coding now!</h3>
 

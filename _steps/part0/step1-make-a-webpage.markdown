@@ -33,13 +33,71 @@ make the interface.  The interface is the buttons, labels and boxes to type into
 the javascript tells the web application what to do when we tap the button or type in
 the box.
 
+It's time to use the [Glitch](http://glitch.me){:target="_blank"} online coding platform to start creating your web-app.  Remember that normally you'd do this in a desktop editor but to save time we're using an online editor tonight.
+
 <h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Create an app for this workshop.</h3>
 
-Go to [Glitch.me](http://glitch.me) and hit the *New Project* button.  Choose *hello-webpage* for the type.  After a short time Glitch has created your project with some placeholder content, including a number of files.  
+Go to [glitch.com](http://glitch.com){:target="_blank"} and hit the *New Project* button.  
+
+Choose *hello-webpage* for the type.  
 
 ![start new project](../assets/glitch-new-project.png){:class="img-responsive"}
 
+After a short time Glitch has created your project with some placeholder content, including a number of files.  
+
 We can already view this project in our browser to see what it looks like.  Note the name that Glitch has generated for your project - it will be two short words joined by a hyphen.  Mine is called *wax-join* but yours will be some other name.
+
+When its done creating view it like this:
+
+![Get the web page link](../assets/view-project.png)
+
+1. Click the *Show* menu
+2. Click the *Next to the code* tab
+3. Make sure you bookmark your new project eg *press ⌘D*
+4. Recommended: "Sign in" (top right) 
+
+Signing in will make it *much easier* to save & protect your project & find it again.
+
+#### What is a web server?
+
+Wow.  Building a web page is easy right?  Isn't it just like making a word document?
+
+Well, no - because you need a *web server* to make it really a web page.  So... what is a web server?
+
+Its just a computer - like your laptop, but its always powered on & running 24/7, and its always connected
+to the internet, so that people can connect to it from all over the world.  That's what makes it a world-wide-web
+server. 
+
+There are computer professionals whose whole entire job is just keeping these server computers running,
+and making sure there is enough servers for everyone who is trying to connect.  Imagine how many servers
+you need for somewhere like Google - which has thousands of people connecting every second.
+
+Luckily with Glitch we can edit the page, right on the same web-server that we use to edit the code.  Pretty
+handy.  
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Create an app for this workshop.</h3>
+
+To prove your new page really is on a web server, do the following:
+
+![Glitch project ready](../assets/get-the-web-page-link.png){:class="img-responsive"}
+
+1. Click the *Show* menu
+2. *Right-click* the _In a new Window_ pane
+3. Choose *Copy link*
+4. Open that link up in a new web browser window.  It will be eg [wax-join.glitch.me](https://wax-join.glitch.me){:target="_blank"}
+5. Now type that link into your phone's web browser.
+
+Even though you built the page in your desktop browser there it is - available in your phone!  And your phone could
+be anywhere in the world.  Try texting a friend and ask them to open your brand new page.  Ask them what they think!
+
+#### Structure of a Web App
+
+In a mobile application like a native iOS app or an Android app, or a native application on your
+laptop computer the interface of that app is defined by special layout files.  In Android they're
+actually XML files that are not too different from the HTML file here in your glitch project.
+
+Typically web apps try to seperate the User Interface definition from the logic of the application
+itself and its styling is seperated yet again.  Its just the same here in the glitch app.
 
 <h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Open each file in your Glitch editor</h3>
 
@@ -112,6 +170,8 @@ Take a look at Twitter.com.  It has a certain look and feel, and the content is 
 For the app we are going to build we are not quite going to get to that last step of making our app persist its data to a database.  But you can do it with the skills we'll learn today after the workshop is finished.
 
 In fact Glitch.me has a database backed app template that you can access - right when you clicked "New Project" and chose *hello-webpage*, you can also choose *hello-sqlite* to make a database backed web app.
+
+That is in a [stretch goal in the last part of this workshop](http://localhost:4000/js-intro-workshop/step3/#stretch-goal-1){:target="_blank"}.
 
 However we'll get most of the way there to our web application.  Let's get started.
 
