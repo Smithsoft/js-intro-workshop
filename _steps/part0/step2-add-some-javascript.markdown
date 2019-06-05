@@ -343,6 +343,117 @@ list.addEventListener('click', function(ev) {
 
 Now try clicking on a few list items.  What happens when you click one that was already clicked?  What does the `toggle` line of code do?
 
+Awesome right?
+
+Alright - those X buttons we were creating have not been much use so far.  Let's fix that.
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Buttons that Work</h3>
+
+```javascript
+function addCloseButton(toDoNode) {
+  let span = document.createElement("SPAN");
+  let txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  toDoNode.appendChild(span);
+  span.onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+  }
+}
+```
+
+Modify your `addCloseButton` function from before so that it has a handler that is added to each X span.
+
+Try your new "actually close" buttons.  Notice how the CSS statement turns off the element by setting display to none.
+
+#### Form Handling
+
+The most interesting web apps send data to and from servers.  The way we collect that data, and sometimes display
+it in web pages is to use forms.  Traditionally a form is a collection of text fields and other controls, which
+all respond at once when you press the button to *submit* the form.  That causes the page to refresh and hey
+presto magic happens.
+
+However in the new world of Javascript enabled web apps that fetch data live from the server without reloading the
+page things are not always like that with forms.  But because browsers have to cater for the old and the new our
+web page will still want to reload when we press enter in the form field for our todo list.
+
+Lets see what we can do to create new To Do items and add them to our list:
+
+<h3><i class="fa fa-hand-pointer-o " aria-hidden="true"></i> Add it on my list!</h3>
+
+```javascript
+// Create a new list item when clicking on the "Add" button
+function newToDoItem(itemText) {
+  
+  // Create a new HTML "li" list item node & insert it in the HTML
+  var li = document.createElement("li");
+  var t = document.createTextNode(itemText);
+  li.appendChild(t);
+  li.className = "list-group-item";
+  document.getElementById("toDoListDisplay").appendChild(li);
+
+  addCloseButton(li);
+}
+ newToDoItem("Harvest marigolds");
+```
+
+Your page loads, and the script adds a new item to the list.  Note that it uses your new `addCloseButton` function so that all our cool close button functionality is there on this newly added item.
+
+That's good but we want to hook it up to our form field.  This will do the job by enabling our button:
+
+```javascript
+// Function to create an item using the current value of the 
+// "inputToDo" field
+function createItem() {
+  let inputValue = document.getElementById("inputToDo").value;
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    newToDoItem(inputValue);
+  }
+}
+```
+
+In our html file `index.html` edit the button so that it looks like this:
+
+```javascript
+<span onclick="createItem()" class="btn btn-primary">Submit</span>
+```
+
+Now you should be able to add new items to your to do list by pressing the button!  Awesome we have an app.
+
+There's a trick here.  Notice that our "button" is actually a span?  In classic web tech, we use an actual
+html `button` object to `submit` our form.  But if we did that we'd get the problem of our page reloading
+and since we're being a clever "single page app" we don't want to do that.
+
+#### Form Submission
+
+OK, time to make our form actually get submitting.  This time we'll use another trick to stop the page loading even though the submission is passed into our web page as an event.  Still in the HTML change the form to look like this:
+
+```javascript
+// Make the form submission also create an item
+const todoForm = document.forms[0];
+todoForm.onsubmit = function(event) {
+  
+  // stop our form submission from refreshing the page
+  event.preventDefault();
+
+  // Get the input field value
+  let inputToDo = document.getElementById("inputToDo");
+  let newToDo = inputToDo.value;
+
+  newToDoItem(newToDo);
+
+  // reset form 
+  inputToDo.value = '';
+  inputToDo.focus();
+};
+```
+
+We're going to create a function called `createItem()` and it will be the *on submit handler* for our form.
+
+
 #### COMMENTS
 
 One more thing before we move on, comments.
